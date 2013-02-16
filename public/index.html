@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>Moons of the Oneida Culture</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+    }
+    .turtle {
+      margin: 20px auto;
+      width: 35%;
+      position: relative;
+    }
+    .turtle img {
+      width: 100%;
+    }
+    .game-board .moon {
+      width: 25%;
+      height: 10%;
+      position: absolute;
+      color: transparent;
+      text-align: center;
+    }
+    .game-board .moon:hover {
+      border-radius: 20px;
+      border: 3px dotted #333;
+      background-color: rgba(120, 100 , 45, 0.75);
+      color: #fff;
+    }
+    .moon span {
+      display: inline-block;
+      margin-top: 10%;
+    }
+    .moon span.onieda {
+      font-weight: bold;
+    }
+
+.game-board .moon-1   { left:  10%; top: 35%; }
+.game-board .moon-2   { left:  10%; top: 46%; }
+.game-board .moon-3   { left:  10%; top: 57%; }
+.game-board .moon-4   { left:  10%; top: 68%; }
+
+.game-board .moon-10 { left:  50%; top: 30%; margin-left: -12.5%; }
+.game-board .moon-11 { left:  50%; top: 41%; margin-left: -12.5%; }
+.game-board .moon-12 { left:  50%; top: 52%; margin-left: -12.5%; }
+.game-board .moon-13 { left:  50%; top: 63%; margin-left: -12.5%; }
+.game-board .moon-5  { left:  50%; top: 74%; margin-left: -12.5%; }
+
+.game-board .moon-9  { right: 10%; top: 35%; }
+.game-board .moon-8  { right: 10%; top: 46%; }
+.game-board .moon-7  { right: 10%; top: 57%; }
+.game-board .moon-6  { right: 10%; top: 68%; }
+
+    .game-pieces {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="turtle">
+    <img src="/images/turtle.jpg">
+    <div class="game-board">
+      <div data-moon="1"  class="moon moon-1"> <span class="onieda"> Tsya'tekohselha    </span> <span class="english"> She's freezing her ears </span> </div>
+      <div data-moon="2"  class="moon moon-2"> <span class="onieda"> Tew^hni'slyaks     </span> <span class="english"> Half Days               </span> </div>
+      <div data-moon="3"  class="moon moon-3"> <span class="onieda"> Wahsakayu:te'hse'  </span> <span class="english"> Thunderers              </span> </div>
+      <div data-moon="4"  class="moon moon-4"> <span class="onieda"> Latiy^thos         </span> <span class="english"> Planting Time           </span> </div>
+
+      <div data-moon="5"  class="moon moon-5"> <span class="onieda"> Aw^hihte           </span> <span class="english"> Strawberries            </span> </div>
+      <div data-moon="6"  class="moon moon-6"> <span class="onieda"> Ohyotshe:li        </span> <span class="english"> Green Beans             </span> </div>
+      <div data-moon="7"  class="moon moon-7"> <span class="onieda"> On^sytase'         </span> <span class="english"> Green Corn              </span> </div>
+      <div data-moon="8"  class="moon moon-8"> <span class="onieda"> Yey^tho'kwas       </span> <span class="english"> She is Harvesting       </span> </div>
+      <div data-moon="9"  class="moon moon-9"> <span class="onieda"> Yute'khway^he'     </span> <span class="english"> She is Storing Food     </span> </div>
+
+      <div data-moon="10" class="moon moon-10"><span class="onieda"> Tehut^n^hela:tu'he </span> <span class="english"> We Give Thanks          </span> </div>
+      <div data-moon="11" class="moon moon-11"><span class="onieda"> Latolats           </span> <span class="english"> He is Hunting           </span> </div>
+      <div data-moon="12" class="moon moon-12"><span class="onieda"> Wasutehs           </span> <span class="english"> Long Nights             </span> </div>
+      <div data-moon="13" class="moon moon-13"><span class="onieda"> Wataklokwa'sko     </span> <span class="english"> Snow Moon               </span> </div>
+    </div>
+    <div class="game-pieces">
+      <div data-moon="1"  class="moon moon-1"> <span class="onieda"> Tsya'tekohselha    </span> <span class="english"> She's freezing her ears </span> </div>
+      <div data-moon="2"  class="moon moon-2"> <span class="onieda"> Tew^hni'slyaks     </span> <span class="english"> Half Days               </span> </div>
+      <div data-moon="3"  class="moon moon-3"> <span class="onieda"> Wahsakayu:te'hse'  </span> <span class="english"> Thunderers              </span> </div>
+      <div data-moon="4"  class="moon moon-4"> <span class="onieda"> Latiy^thos         </span> <span class="english"> Planting Time           </span> </div>
+      <div data-moon="5"  class="moon moon-5"> <span class="onieda"> Aw^hihte           </span> <span class="english"> Strawberries            </span> </div>
+      <div data-moon="6"  class="moon moon-6"> <span class="onieda"> Ohyotshe:li        </span> <span class="english"> Green Beans             </span> </div>
+      <div data-moon="7"  class="moon moon-7"> <span class="onieda"> On^sytase'         </span> <span class="english"> Green Corn              </span> </div>
+      <div data-moon="8"  class="moon moon-8"> <span class="onieda"> Yey^tho'kwas       </span> <span class="english"> She is Harvesting       </span> </div>
+      <div data-moon="9"  class="moon moon-9"> <span class="onieda"> Yute'khway^he'     </span> <span class="english"> She is Storing Food     </span> </div>
+      <div data-moon="10" class="moon moon-10"><span class="onieda"> Tehut^n^hela:tu'he </span> <span class="english"> We Give Thanks          </span> </div>
+      <div data-moon="11" class="moon moon-11"><span class="onieda"> Latolats           </span> <span class="english"> He is Hunting           </span> </div>
+      <div data-moon="12" class="moon moon-12"><span class="onieda"> Wasutehs           </span> <span class="english"> Long Nights             </span> </div>
+      <div data-moon="13" class="moon moon-13"><span class="onieda"> Wataklokwa'sko     </span> <span class="english"> Snow Moon               </span> </div>
+    </div>
+  </div>
+</body>
+</html>
